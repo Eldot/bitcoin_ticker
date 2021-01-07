@@ -13,6 +13,7 @@ class _PriceScreenState extends State<PriceScreen> {
 
   DropdownButton<String> androidPicker() {
     List<DropdownMenuItem<String>> allCurrencyItems = [];
+
     for (String currency in currenciesList) {
       allCurrencyItems
           .add(DropdownMenuItem(child: Text(currency), value: currency));
